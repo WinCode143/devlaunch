@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=devlaunch
+Comment=Start and stop local projects, see their URLs
+Exec=devlaunch
+Icon=devlaunch
+Terminal=true
+Categories=Development;

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3a55"/><stop offset="1" stop-color="#151c2c"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd24a"/><stop offset="1" stop-color="#ff6a2b"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="url(#bg)"/>
+  <!-- terminal prompt -->
+  <path d="M22 92 l12 9 l-12 9" fill="none" stroke="#5fd38d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="40" y="105" width="18" height="6" rx="3" fill="#5fd38d"/>
+  <!-- rocket, tilted 45° -->
+  <g transform="rotate(45 78 52)">
+    <path d="M70 80 q8 22 8 22 q0 0 8 -22 z" fill="url(#flame)"/>
+    <path d="M66 60 l-10 14 l10 4 z" fill="#e8505b"/>
+    <path d="M90 60 l10 14 l-10 4 z" fill="#e8505b"/>
+    <path d="M78 18 c12 10 14 30 12 62 h-24 c-2 -32 0 -52 12 -62 z" fill="#eef2f7"/>
+    <circle cx="78" cy="46" r="7" fill="#4aa8ff" stroke="#2b3a55" stroke-width="3"/>
+    <path d="M66 80 h24 v4 h-24 z" fill="#c9d1dc"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+[project]
+name = "devlaunch"
+version = "0.1.0"
+description = "Terminal dashboard to start and stop your local dev projects: processes, Docker containers and compose stacks."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "WinCode143", email = "202718898+WinCode143@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Software Development",
+]
+dependencies = [
+    "psutil>=7.0",
+    "qrcode>=8.0",
+    "textual>=3.0",
+]
+
+[project.scripts]
+devlaunch = "devlaunch:main"
+
+[build-system]
+requires = ["uv_build>=0.8,<0.12"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.25",
+    "ruff>=0.9",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
